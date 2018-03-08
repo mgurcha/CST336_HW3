@@ -9,32 +9,33 @@
         <link rel="stylesheet" type="text/css" href="./CSS/Styles.css"> 
     </head>
     <body>  
+    <div class="errors">
     <?php 
-             if ((empty($_POST["name"]))){
-                 echo "<h2> Name was not filled out. </h2>";
-             }
-             if ((empty($_POST["age"]))){
-                 echo "<h2> Age was not filled out. </h2>";
-             }
-             if ((empty($_POST["category"]))){
-                 echo "<h2> An answer for the question was not selected. </h2>";
-             }
-             if ((empty($_POST["merchandise"]))){
-                  echo "<h2> The type of chocolate to order was not checked. </h2>";
-             }
-            if((empty($_POST["boxes"]))){
-                echo "<h2> The number of boxes to order was not selected. </h2>";
-            }
-            if (empty($_POST["name"]) || empty($_POST["age"]) || empty($_POST["category"])
-              || empty($_POST["merchandise"]) || empty($_POST["boxes"])){
-                  echo "<form>";
-                  echo "<input type='button' value='Go back!' onclick='history.back()'>";
+        if (empty($_POST["name"]) || empty($_POST["age"]) || empty($_POST["category"])
+              || empty($_POST["merchandise"]) || empty($_POST["boxes"]))
+        {
+                 if ((empty($_POST["name"]))){
+                     echo "<h2> Name was not filled out. </h2>";
+                 }
+                 if ((empty($_POST["age"]))){
+                     echo "<h2> Age was not filled out. </h2>";
+                 }
+                 if ((empty($_POST["category"]))){
+                     echo "<h2> An answer for the question was not selected. </h2>";
+                 }
+                 if ((empty($_POST["merchandise"]))){
+                      echo "<h2> The type of chocolate to order was not checked. </h2>";
+                 }
+                if((empty($_POST["boxes"]))){
+                    echo "<h2> The number of boxes to order was not selected. </h2>";
+                }
+                  echo "<form id='back'>";
+                  echo "<input class='button' type='button' value='Go back!' onclick='history.back()'>";
                   echo "</form>";
              }
             else{
                 ?>
-        
-
+        </div>
         <div class="container">
             <div class="content">
                 <p>Thank you, <strong><?= $_POST["name"] ?></strong>!</p>
@@ -174,7 +175,7 @@
     
     </form>
     <div class="formSubmissions">
-    <h2><strong>Would You like to order again? </strong></h2>
+    <h2 id="final"><strong>Would You like to order again? </strong></h2>
         <form action="index.php">
             <input type="submit" alt="Submit" value="Yes">
         </form><br/>
