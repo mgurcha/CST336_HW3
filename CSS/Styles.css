@@ -1,0 +1,86 @@
+.ordered{
+    text-align: left;
+}
+html {
+    background-color:#191919;
+}
+
+h1 {
+    text-align:center;
+}
+
+#divider{
+    text-align: center;
+    color: white;
+}
+
+#dividerTwo{
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    text-align:center;
+}
+
+.container
+{
+    margin: auto;
+    width: 930px;
+    background-color:#DFE2DB;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.content
+{
+    margin: auto;
+    width: 85%;
+    color: black;
+}
+
+.banner
+{
+    text-align:center;
+    margin: auto;
+    width: 70%;
+}
+
+.banner img
+{
+    width: 500px;
+    height: 250px;
+}
+
+.radios
+{
+    margin: auto;
+    width: 80%;
+}
+
+.formSubmission
+{
+    margin: auto;
+    width: 20%;
+    height: 50%;
+    
+}
+
+.formSubmissions
+{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    
+}
+
+
+
+.center
+{
+    text-align:center;
+    margin: auto;
+    width: 50%;
+}
